@@ -11,7 +11,7 @@ int main() {
 
     if (arq.is_open()) {
         while (getline(arq, word, delimiter)) {
-            cout <<  << "\n";
+            cout << word << "\n";
         }
     } else {
         cout << "Não foi possível abrir o arquivo";
