@@ -1,11 +1,14 @@
-#ifndef _FILE_READER_HPP_
-#define _FILE_READER_HPP_
+#ifndef FILEREADER_HPP
+#define FILEREADER_HPP
+
+#include "WordList.hpp"
+#include <string>
+using namespace std;
 
 class FileReader {
     public:
         FileReader();
-        ~FileReader();
-        void readWords();
-}
+        WordList readWords(string path);
+};
 
 #endif

@@ -1,8 +1,14 @@
 #include <iostream>
 #include <string>
-#include "Word.hpp"
+#include "../include/Word.hpp"
 
 using namespace std;
+
+Word::Word() {
+    this->english = "";
+    this->portuguese = "";
+    this->word_class = "";
+}
 
 Word::Word(string english, string portuguese, string word_class) {
     this->english = english;
@@ -10,15 +16,15 @@ Word::Word(string english, string portuguese, string word_class) {
     this->word_class = word_class;
 }
 
-Word::getEnglish() {
+string Word::getEnglish() { 
     return this->english;
 }
 
-Word::getPortuguese() {
+string Word::getPortuguese() { 
     return this->portuguese;
 }
 
-Word::getWordClass() {
+string Word::getWordClass() { 
     return this->word_class;
 }
 

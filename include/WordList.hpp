@@ -1,17 +1,16 @@
-#ifndef __WORD_LIST_HPP__
-#define __WORD_LIST_HPP__
+#ifndef WORDLIST_HPP
+#define WORDLIST_HPP
 
 #include "Word.hpp"
-using namespace std;
-
-struct Node {
-    Word word;
-    Node * next;
-    Node * prev;
-};
 
 class WordList {
-    private:
+    public:
+        struct Node {
+            Word word;
+            Node * next;
+            Node * prev;
+        };
+        
         Node * head;
         Node * tail;
         int size;
@@ -19,9 +18,9 @@ class WordList {
     public:
         WordList();
         ~WordList();
-
+        
         void add(Word word);
-        void remove(Word word);
+        Word remove(int pos);
         void print();
 };
 
