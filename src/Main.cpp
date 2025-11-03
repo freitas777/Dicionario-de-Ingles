@@ -108,3 +108,5 @@ int main() {
     
     return 0;
 }
+
+// g++ -o main.exe src/Main.cpp src/Word.cpp src/WordList.cpp src/FileReader.cpp src/Dictionary.cpp -Iinclude -std=c++11
